@@ -1,0 +1,25 @@
+# Virtual environment
+.venv/
+
+# Allow specific files inside the .venv folder
+!.venv/database.py
+!.venv/models.py
+!.venv/routers/
+
+# PyCharm files
+.idea/
+__pycache__/
+
+# Windows files
+*.tmp
+*.log
+
+desktop.ini
+
+# Ignore environment variables file
+.env
+
+# Uploads directory from your screenshot
+.tmp.driveupload/
+
+# Any other files or folders you want to ignore
