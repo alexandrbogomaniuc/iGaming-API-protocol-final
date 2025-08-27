@@ -1,10 +1,8 @@
-# Virtual environment
-.venv/
-
-# Allow specific files inside the .venv folder
+# Hide everything in .venv, but re-include a few files/folders
+.venv/**
 !.venv/database.py
 !.venv/models.py
-!.venv/routers/
+!.venv/routers/**
 
 # PyCharm files
 .idea/
