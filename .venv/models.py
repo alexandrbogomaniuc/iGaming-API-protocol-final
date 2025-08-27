@@ -17,8 +17,8 @@ class Player(Base):
     date_of_birth = Column(DateTime, nullable=True)
     phone_number = Column(String(20), nullable=True)
     country = Column(String(50), nullable=True)
-    ext_user_id = Column(String(255), nullable=True)
-
+    # models.py
+    ext_user_id = Column(String(255), unique=True, nullable=True)
 
     wallets = relationship("Wallet", back_populates="player")
 
